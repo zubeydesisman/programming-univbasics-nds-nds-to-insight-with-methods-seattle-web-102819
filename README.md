@@ -37,17 +37,15 @@ rule."
 Your guiding rule of thumb should be "can a reasonable person understand this
 code at 3 am on 3 hours of sleep 3 weeks from now?" If you can honestly say,
 "Yes. This is the most understandable I can do right now," then you've probably
-gotten clean enough. 
+gotten clean enough.
 
-Our guideline comes from the idea of being an "on-call" support
-programmer.  You're warm and cozy in bed. Suddenly your phone (pager?) goes
-off: site is down, it's the day before your biggest online sales day. You go
-to look at the code that's sending out the error and you see...(your code
-here)...if you, in this exercise of empathy, feel like crying, then you
-should clean up your code more. If you feel like you've given your future
-self and other developers a strong, understandable basis for fixing things,
-you've met the guideline.
-
+Our guideline comes from the idea of being an "on-call" support programmer.
+You're warm and cozy in bed. Suddenly your phone (pager?) goes off: site is
+down, it's the day before your biggest online sales day. You go to look at the
+code that's sending out the error and you see...(your code here)...if you, in
+this exercise of empathy, feel like crying, then you should clean up your code
+more. If you feel like you've given your future self and other developers a
+strong, understandable basis for fixing things, you've met the guideline.
 
 ## Wrap Uses of `[]` from Step 2 into new method
 
@@ -118,8 +116,9 @@ total.
 Beginners are often staggered by the idea we just presented: that we can just
 code into existence things we wish we had.  But ...  Yes! We can! And we
 should! It's strange, many beginners understand _how_ to write methods but have
-an "Ah-hah!" moment when they realize that _we_ don't serve the methods, the
-methods serve _us_.
+not yet had an "Ah-hah!" moment when they realize that _we_ don't serve the
+methods, the methods serve _us_. We hope some of you have been enlightened by
+reading that sentence!
 
 Let's create the method `total_snack_pieces_on_spinner`. It will take as
 arguments:
@@ -170,7 +169,7 @@ See how it's easier to read? Without the extra noise, it's easier to see that
 we're iterating through grid coordinates and, for each coordinate pair, we're
 asking some other bit of thinking called `total_pieces_on_first_spinner` to
 tell us how many pieces of snack are present in the spinner. This liberates our
-brains from having to think about the low-level `[]` details inside the method. 
+brains from having to think about the low-level `[]` details inside the method.
 
 This is the heart of programming: building small little methods that make it
 easy for humans to reason about how we asked a computer to help us figure
@@ -182,16 +181,21 @@ Kernighan:
 ## Create a "First-Order" Method
 
 We call `total_pieces_on_first_spinner` a "First-Order Method." It wraps the
-basic Ruby code in a meaningful name. 
+basic Ruby code in a meaningful name. "First-Order" means that instead of
+dealing with "atomic" issues, we're working at a higher level of abstraction. A
+"First-Order" method in real life is "make a sandwich." It's many of many,
+many, smaller, atomic operations, but instead of saying do all them, we just
+say "make a sandwich."
 
 ## Ensure "First-Order Methods" Use Arguments to Create Flexibility
 
 It's worth taking a moment to consider the arguments to
 `total_snack_pieces_on_spinner`. We chose arguments that allow flexibility
-(total_snack_pieces_on_spinner is better than `total_pieces_on_first_spinner`).
+(`total_snack_pieces_on_spinner` is better than `total_pieces_on_first_spinner`).
+
 Also, by passing the big NDS in the method call we're saying "Look, we don't
 want to know how you calculate this, but you're going to need these three
-facts."
+facts: NDS, row coordinate, and column coordinate."
 
 You might recall that the process of making methods that are flexible based on
 arguments is called _abstraction_. We should endeavor to make our methods
@@ -203,7 +207,10 @@ experience. Let the "3 a.m. rule" be your guide.
 
 In the lab you're going to work with the directors NDS again and clean up your
 implementation from the previous lesson. You're going to be prompted to create
-a "First-order method" that will make your code cleaner.
+a "First-order method" that will make your code cleaner. Outside of a lab
+setting you can choose your method names as you please. In this lab, however,
+we've specified what it should be called and how it should operate. Look at the
+comments and tests for guidance.
 
 ## Conclusion
 
