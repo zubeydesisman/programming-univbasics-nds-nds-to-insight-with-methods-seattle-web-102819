@@ -109,7 +109,7 @@ Inside this code two key things happen:
 1. We total up the price in each of the snacks on a vending machine "spinner"
 2. We "accumulate" that number to a grand total.
 
-This could would be simpler if we had a method that could
+This would be simpler if we had a method that could
 `total_value_of_spinner`. For each spinner in the row, we'd hand the spinner to
 our method, and the method would return the total number of snacks on the
 spinner.  Then, we'd accumulate those returned spinner totals to a grand total.
