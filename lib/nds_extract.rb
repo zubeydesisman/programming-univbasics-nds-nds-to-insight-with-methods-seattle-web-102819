@@ -1,15 +1,16 @@
 require 'directors_database'
-# Call the method directors_database to retrieve the NDS
+
+# Write a method that, given an NDS creates a new Hash
+# The return value should be like:
+#
+# { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
+  result = {}
+  nil
 end
 
-def gross_for_director(director_name)
-  # Write a method that, given an NDS and a directors name returns the totals
-  # of that directors movies based on summing an AoH where each Hash has a key
-  # :worldwide_gross
-  #
-  # Hint:
-  # * Find the right director
-  # * Once found, iterate the director's movies and total up their gross
+# Find a way to accumulate the :worldwide_grosses and return that Integer
+# using director_data as input
+def gross_for_director(director_data)
 end

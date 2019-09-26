@@ -211,10 +211,11 @@ experience. Let the "3 a.m. rule" be your guide.
 
 In the lab you're going to work with the directors NDS again and clean up your
 implementation from the previous lesson. You're going to be prompted to create
-a "First-order method" that will make your code cleaner. Outside of a lab
-setting, you can choose your method names as you please. In this lab, however,
-we've specified what it should be called and how it should operate. Look at the
-comments and tests for guidance.
+a "First-order method" that will make your code cleaner (`gross_for_director`).
+
+This method will be used by another method that contains _it_ called
+`directors_totals`. It returns a `Hash` of directors names to their total
+gross, like we've seen before, but it's much neater code.
 
 ## Conclusion
 
