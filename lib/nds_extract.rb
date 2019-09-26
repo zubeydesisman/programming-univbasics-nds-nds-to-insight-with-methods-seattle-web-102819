@@ -1,3 +1,4 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 # Write a method that, given an NDS creates a new Hash
