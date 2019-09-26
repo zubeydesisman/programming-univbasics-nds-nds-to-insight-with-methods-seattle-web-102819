@@ -184,7 +184,8 @@ Kernighan:
 We call `total_value_of_spinner` a "First-Order Method." It wraps the basic
 Ruby code in a meaningful name. "First-Order" means that instead of dealing
 with "atomic" Ruby syntax like `[]`, we're working at a higher level of
-abstraction a "first step" or "first order" away from the atomic syntax.
+abstraction that's a "first step" or "first order" away from the foundational
+syntax.
 
 A "First-Order" method in real life is "make a sandwich." It's many of many,
 many, smaller, atomic operations, but instead of thinking terms of _all_ of
@@ -211,7 +212,7 @@ experience. Let the "3 a.m. rule" be your guide.
 In the lab you're going to work with the directors NDS again and clean up your
 implementation from the previous lesson. You're going to be prompted to create
 a "First-order method" that will make your code cleaner. Outside of a lab
-setting you can choose your method names as you please. In this lab, however,
+setting, you can choose your method names as you please. In this lab, however,
 we've specified what it should be called and how it should operate. Look at the
 comments and tests for guidance.
 
