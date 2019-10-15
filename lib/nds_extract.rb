@@ -14,13 +14,12 @@ require 'directors_database'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  #binding.pry
-  gross_hash ={} 
-  gross = 0 
-  i = 0 
-  while i < director_data.length do 
-    key = director_data[i][:name]
-    gross += director_data[i][:worldwide_gross]
+#def total_value_of_spinner(nds, row_index, column_index)
+  gross = 0
+  i = 0
+  while i< director_data do
+    gross += director_data[i][:name]
+    i += 1
   end
-   gross_hash[:key] = gross
+  gross
 end
